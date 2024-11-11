@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-product {
+  background-image: url('/bg-product.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  border-radius: 45px; /* Adjust the radius as needed */
+  overflow: hidden; /* This ensures the content inside the div respects the border radius */
+}
+.custom-font { 
+  font-family: "poppins", sans-serif;
+}
+.bg-login {
+  background-image: url('/bg-product.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.input-field {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.submit-button {
+  background-color: #F6C13F;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #FD853A;
+}
