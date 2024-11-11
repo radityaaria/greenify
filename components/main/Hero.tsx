@@ -19,7 +19,7 @@ export const Hero = () => {
       </div>
       <div className="w-1/2 flex justify-center ml-8">
         <Image
-          src="/orang.svg"
+          src="/orang2.svg"
           alt="orang"
           width={506}
           height={488}
