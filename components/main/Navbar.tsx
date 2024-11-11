@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
           <div className="flex items-center">
             <a href="/" className="flex items-center cursor-pointer">
               <Image
-                src="/logo.png"
+                src="/logo.svg"
                 alt="Logo"
                 width={24}
                 height={24}
@@ -71,8 +71,7 @@ const Navbar: React.FC = () => {
                 {menuItems.map((item) =>
                   item.isLogo ? (
                     <a key={item.name} href={item.href} className="flex items-center cursor-pointer">
-                      <Image src="/carakan.png" alt="Carakan Logo" width={24} height={24} />
-                      <span className="ml-1 font-bold">CARAKAN</span>
+                      <Image src="/logo.svg" alt="Logo" width={32} height={32} />
                     </a>
                   ) : (
                     <motion.a
@@ -81,7 +80,7 @@ const Navbar: React.FC = () => {
                       whileTap={{ scale: 0.95 }}
                       onClick={() => handleClick(item.href)}
                       className={`cursor-pointer transition-colors duration-300 ${
-                        active === item.href ? "bg-[#F6C13F] text-black" : ""
+                        active === item.href ? "bg-[#016A70] text-white" : ""
                       } px-4 py-1 rounded-full `}
                     >
                       {item.name}
@@ -91,7 +90,7 @@ const Navbar: React.FC = () => {
                 <motion.a
                   href="/register"
                   onClick={() => handleClick("/register")}
-                  className="cursor-pointer transition-colors duration-300 bg-[#016A70] text-white px-4 py-1 rounded-full"
+                  className="cursor-pointer transition-colors duration-300 bg-[#016A70] text-white px-4 py-1 rounded-lg"
                 >
                   Register
                 </motion.a>
@@ -117,7 +116,7 @@ const Navbar: React.FC = () => {
                       whileTap={{ scale: 0.95 }}
                       onClick={() => handleClick(item.href)}
                       className={`w-full text-center cursor-pointer transition-colors duration-300 ${
-                        active === item.href ? "bg-[#F6C13F] text-black" : ""
+                        active === item.href ? "bg-[#016A70] text-white" : ""
                       } px-4 py-2 rounded-full`}
                     >
                       {item.name}
