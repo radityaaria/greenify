@@ -26,7 +26,7 @@ const Register = () => {
             <Image src="/orang.svg" alt="Orang" width={600} height={600} className="absolute bottom-0" />
         </div>
         <div className="flex-1 flex flex-col items-center">
-            <h2 className="text-2xl font-bold mb-4">Register</h2>
+            <h2 className="text-2xl font-bold mb-4 text-black">Register</h2>
             <form onSubmit={handleSubmit} className="bg-white p-6 rounded shadow-md w-96">
                 <div className="flex mb-4">
                     <div className="mr-4 flex-1">
@@ -36,7 +36,7 @@ const Register = () => {
                             id="firstName"
                             value={firstName}
                             onChange={(e) => setFirstName(e.target.value)}
-                            className="mt-1 block w-full border border-gray-300 rounded-md p-2"
+                            className="mt-1 block w-full border border-gray-300 bg-white rounded-md p-2"
                             required
                         />
                     </div>
@@ -47,7 +47,7 @@ const Register = () => {
                             id="lastName"
                             value={lastName}
                             onChange={(e) => setLastName(e.target.value)}
-                            className="mt-1 block w-full border border-gray-300 rounded-md p-2"
+                            className="mt-1 block w-full border border-gray-300 bg-white rounded-md p-2"
                             required
                         />
                     </div>
@@ -59,7 +59,7 @@ const Register = () => {
                         id="username"
                         value={username}
                         onChange={(e) => setUsername(e.target.value)}
-                        className="mt-1 block w-full border border-gray-300 rounded-md p-2"
+                        className="mt-1 block w-full border border-gray-300 bg-white rounded-md p-2"
                         required
                     />
                 </div>
@@ -70,7 +70,7 @@ const Register = () => {
                         id="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        className="mt-1 block w-full border border-gray-300 rounded-md p-2"
+                        className="mt-1 block w-full border border-gray-300 bg-white rounded-md p-2"
                         required
                     />
                 </div>
@@ -81,7 +81,7 @@ const Register = () => {
                         id="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                        className="mt-1 block w-full border border-gray-300 rounded-md p-2"
+                        className="mt-1 block w-full border border-gray-300 bg-white rounded-md p-2"
                         required
                     />
                 </div>

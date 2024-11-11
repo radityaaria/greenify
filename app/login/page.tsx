@@ -5,17 +5,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const Register = () => {
-  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
 
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission logic here
-    console.log('Username:', username);
     console.log('Password:', password);
   };
 
@@ -26,43 +22,8 @@ const Register = () => {
             <Image src="/orang.svg" alt="Orang" width={600} height={600} className="absolute bottom-0" />
         </div>
         <div className="flex-1 flex flex-col items-center">
-        <h2 className="text-2xl font-bold mb-4 ">Login</h2>
+        <h2 className="text-2xl font-bold mb-4 text-black">Login</h2>
             <form onSubmit={handleSubmit} className="bg-white p-6 rounded shadow-md w-96">
-                <div className="flex mb-4">
-                    <div className="mr-4 flex-1">
-                        <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">First Name</label>
-                        <input
-                            type="text"
-                            id="firstName"
-                            value={firstName}
-                            onChange={(e) => setFirstName(e.target.value)}
-                            className="mt-1 block w-full border border-gray-300 rounded-md p-2"
-                            required
-                        />
-                    </div>
-                    <div className="flex-1">
-                        <label htmlFor="lastName" className="block text-sm font-medium text-gray-700">Last Name</label>
-                        <input
-                            type="text"
-                            id="lastName"
-                            value={lastName}
-                            onChange={(e) => setLastName(e.target.value)}
-                            className="mt-1 block w-full border border-gray-300 rounded-md p-2"
-                            required
-                        />
-                    </div>
-                </div>
-                <div className="mb-4">
-                    <label htmlFor="username" className="block text-sm font-medium text-gray-700">Username</label>
-                    <input
-                        type="text"
-                        id="username"
-                        value={username}
-                        onChange={(e) => setUsername(e.target.value)}
-                        className="mt-1 block w-full border border-gray-300 rounded-md p-2"
-                        required
-                    />
-                </div>
                 <div className="mb-4">
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
                     <input
@@ -70,7 +31,7 @@ const Register = () => {
                         id="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        className="mt-1 block w-full border border-gray-300 rounded-md p-2"
+                        className="mt-1 block w-full border border-gray-300 bg-white rounded-md p-2"
                         required
                     />
                 </div>
@@ -81,7 +42,7 @@ const Register = () => {
                         id="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                        className="mt-1 block w-full border border-gray-300 rounded-md p-2"
+                        className="mt-1 block w-full border border-gray-300 bg-white rounded-md p-2"
                         required
                     />
                 </div>
