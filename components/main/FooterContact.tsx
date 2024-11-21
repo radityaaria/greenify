@@ -63,7 +63,7 @@ const Footer = () => {
   };
 
   return (
-    <footer id="contact" className="bg-[#272727] text-[#FCFCFD] py-12 rounded-t-[25px]">
+    <footer id="contact" className="bg-[#016A70] text-[#FCFCFD] py-12 rounded-t-[25px]">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex flex-col lg:flex-row justify-between items-center mb-16">
           <h2 className="text-3xl lg:text-5xl font-bold text-center lg:text-left">Let&apos;s Connect there</h2>

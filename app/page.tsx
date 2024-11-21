@@ -10,10 +10,10 @@ import Footer from "@/components/main/FooterContact";
 
 export default function Home() {
   return (
-    <main className="h-full w-full bg-[#016A70]">
+    <main className="h-full w-full bg-white">
       <div className="flex flex-col gap-20"></div>
        <Hero />
-       <Product />
+       {/* <Product /> */}
        <Service />
        <VissonAndMission />
        <OtherProduct />
