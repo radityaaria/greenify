@@ -23,33 +23,33 @@ const Register = () => {
         </div>
         <div className="flex-1 flex flex-col items-center">
         <h2 className="text-2xl font-bold mb-4 text-black">Login</h2>
-            <form onSubmit={handleSubmit} className="bg-white p-6 rounded shadow-md w-96">
+            <form onSubmit={handleSubmit} className="bg-white px-8 py-6 border rounded shadow-md" style={{ width: "80%" }}>
                 <div className="mb-4">
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
+                    <label htmlFor="email" className="block text-sm font-bold mb-3 text-gray-700">Email</label>
                     <input
                         type="text"
                         id="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        className="mt-1 block w-full border border-gray-300 bg-white rounded-md p-2"
+                        className="mt-1 block w-full border border-black bg-white rounded-md p-2"
                         required
                     />
                 </div>
                 <div className="mb-4">
-                    <label htmlFor="password" className="block text-sm font-medium text-gray-700">Password</label>
+                    <label htmlFor="password" className="block text-sm font-bold mb-3 text-gray-700">Password</label>
                     <input
                         type="password"
                         id="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                        className="mt-1 block w-full border border-gray-300 bg-white rounded-md p-2"
+                        className="mt-1 block w-full border border-black bg-white rounded-md p-2"
                         required
                     />
                 </div>
-                <button type="submit" className="w-full bg-[#016A70] text-white p-2 rounded-md hover:bg-[#184c4e]">
-                    Register
+                <button type="submit" className="w-full bg-[#016A70] font-bold text-white p-2 mt-4 rounded-md hover:bg-[#184c4e]">
+                    Login
                 </button>
-                <p className="text-sm text-center text-black mt-2">New user? <span className='text-[#016A70] font-bold underline'><Link href="/register">Register</Link></span></p>
+                <p className="text-sm text-black mt-3">New user? <span className='text-[#016A70] font-bold underline'><Link href="/register">Register</Link></span></p>
             </form>
         </div>
     </div>

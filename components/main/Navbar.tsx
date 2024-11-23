@@ -21,9 +21,9 @@ const Navbar: React.FC = () => {
 
   const menuItems = [
     { name: "Logo", href: "/", isLogo: true },
-    { name: "Home", href: "#about-me" },
+    { name: "Home", href: "#hero" },
     { name: "Service", href: "#service" },
-    { name: "Information", href: "#vision" },
+    { name: "Information", href: "#information" },
     { name: "About", href: "#contact" },
   ];
 

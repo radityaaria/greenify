@@ -68,7 +68,7 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center mb-16">
           <h2 className="text-3xl lg:text-5xl font-bold text-center lg:text-left">Let&apos;s Connect there</h2>
           <Link href="/contact">
-            <button className="bg-[#F6C13F] text-[#ffffff] py-2 px-4 rounded-full w-full lg:w-[170px] h-[50px] text-lg flex items-center justify-center mt-4 lg:mt-0 group">
+            <button className="bg-[#28aeb5] text-[#ffffff] py-2 px-4 rounded-full w-full lg:w-[170px] h-[50px] text-lg flex items-center justify-center mt-4 lg:mt-0 group">
               <span className="hover:cursor-pointer group-hover:none">
                 Contact Us
               </span>
@@ -84,11 +84,11 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-between items-start p-0 gap-8 lg:gap-16">
           <div className="flex flex-col items-start mb-8 lg:mb-0">
             <div className="flex items-center mb-4">
-              <Image src="/carakan.png" alt="Carakan Logo" width={50} height={50} />
-              <span className="ml-4 text-xl font-urbanist font-bold">CARAKAN</span>
+              <Image src="/logo.svg" alt="Carakan Logo" width={50} height={50} />
+              <span className="ml-4 text-xl font-urbanist font-bold">Greenify</span>
             </div>
             <p className="mb-8 text-center lg:text-left">
-              Jl. Palagan Tentara Pelajar Blok B No.6 Sariharjo, Ngaglik, Tambak Rejo, Sariharjo, Kec. Ngaglik, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55581
+            Address : Jl. Tentara Rakyat Mataram No.55-57, Bumijo, Kec. Jetis, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55231
             </p>
             <div className="flex space-x-4 justify-center lg:justify-start">
               <FaFacebookSquare className="w-6 h-6" />
@@ -100,34 +100,33 @@ const Footer = () => {
           </div>
           <div className="flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-16">
             <div>
-              <h4 className="font-semibold mb-4 text-[#F6C13F]">Navigation</h4>
+              <h4 className="font-bold mb-4 text-white">Company</h4>
               <ul className="space-y-4">
-                <li><a href="#about-me" className="hover:underline">Home</a></li>
+                {/* <li><a href="#about-me" className="hover:underline">Home</a></li> */}
                 <li><a href="#" className="hover:underline">About Us</a></li>
-                <li><a href="#service" className="hover:underline">Service</a></li>
-                <li><a href="#resume" className="hover:underline">Resume</a></li>
-                <li><a href="#projects" className="hover:underline">Project</a></li>
+                <li><a href="#service" className="hover:underline">Careers</a></li>
+                <li><a href="#resume" className="hover:underline">Mobile</a></li>
+                {/* <li><a href="#projects" className="hover:underline">Project</a></li> */}
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4 text-[#F6C13F]">Contact</h4>
+              <h4 className="font-bold mb-4 text-white">Contact</h4>
               <ul className="space-y-4">
-                <li><p className="hover:underline">contact@carakan.id</p></li>
-                <li><p className="hover:underline">www.carakan.id</p></li>
-                <li><p className="hover:underline">@carakan.id</p></li>
+                <li><p className="hover:underline cursor-pointer">Help/FAQ</p></li>
+                <li><p className="hover:underline cursor-pointer">Contact</p></li>
               </ul>
             </div>
             <div className="flex flex-col items-start w-full lg:w-auto">
-              <h4 className="font-semibold mb-4 text-[#F6C13F]">Get the latest information</h4>
+              <h4 className="font-bold mb-4 text-white">Get the latest information</h4>
               <form className="flex w-full lg:w-auto" onSubmit={handleEmailSubmit}>
                 <input
                   type="email"
                   placeholder="Email Address"
-                  className="p-2 rounded-l-lg text-[#000000] w-full lg:w-64"
+                  className="p-2 rounded-l-lg bg-white text-[#000000] w-full lg:w-64"
                   value={email}
                   onChange={handleEmailChange}
                 />
-                <button className="bg-[#F6C13F] p-2.5 rounded-r-lg flex items-center justify-center" type="submit">
+                <button className="bg-[#28aeb5] p-2.5 rounded-r-lg flex items-center justify-center" type="submit">
                   <BiSolidSend className="w-6 h-6" />
                 </button>
               </form>
@@ -138,7 +137,7 @@ const Footer = () => {
         <div className="border-t border-[#475467] mt-8 mb-4"></div>
 
         <div className="flex flex-col lg:flex-row justify-between items-center">
-          <p className="text-center lg:text-left">Copyright© 2024 Carakan. All Rights Reserved.</p>
+          <p className="text-center lg:text-left">Copyright© 2024 Greenify. All Rights Reserved.</p>
           <div className="flex space-x-4 justify-center lg:justify-start mt-4 lg:mt-0">
             <p className="hover:underline">User Terms & Conditions | Privacy Policy</p>
           </div>

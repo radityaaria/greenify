@@ -27,68 +27,68 @@ const Register = () => {
         </div>
         <div className="flex-1 flex flex-col items-center">
             <h2 className="text-2xl font-bold mb-4 text-black">Register</h2>
-            <form onSubmit={handleSubmit} className="bg-white p-6 rounded shadow-md w-96">
+            <form onSubmit={handleSubmit} className="bg-white border px-8 py-6 rounded shadow-md" style={{width: "80%"}}>
                 <div className="flex mb-4">
                     <div className="mr-4 flex-1">
-                        <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">First Name</label>
+                        <label htmlFor="firstName" className="block text-sm font-bold mb-3 text-gray-700">First Name</label>
                         <input
                             type="text"
                             id="firstName"
                             value={firstName}
                             onChange={(e) => setFirstName(e.target.value)}
-                            className="mt-1 block w-full border border-gray-300 bg-white rounded-md p-2"
+                            className="mt-1 block w-full border border-black bg-white rounded-md p-2"
                             required
                         />
                     </div>
                     <div className="flex-1">
-                        <label htmlFor="lastName" className="block text-sm font-medium text-gray-700">Last Name</label>
+                        <label htmlFor="lastName" className="block text-sm font-bold mb-3 text-gray-700">Last Name</label>
                         <input
                             type="text"
                             id="lastName"
                             value={lastName}
                             onChange={(e) => setLastName(e.target.value)}
-                            className="mt-1 block w-full border border-gray-300 bg-white rounded-md p-2"
+                            className="mt-1 block w-full border border-black bg-white rounded-md p-2"
                             required
                         />
                     </div>
                 </div>
                 <div className="mb-4">
-                    <label htmlFor="username" className="block text-sm font-medium text-gray-700">Username</label>
+                    <label htmlFor="username" className="block text-sm font-bold mb-3 text-gray-700">Username</label>
                     <input
                         type="text"
                         id="username"
                         value={username}
                         onChange={(e) => setUsername(e.target.value)}
-                        className="mt-1 block w-full border border-gray-300 bg-white rounded-md p-2"
+                        className="mt-1 block w-full border border-black bg-white rounded-md p-2"
                         required
                     />
                 </div>
                 <div className="mb-4">
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
+                    <label htmlFor="email" className="block text-sm font-bold mb-3 text-gray-700">Email</label>
                     <input
                         type="text"
                         id="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        className="mt-1 block w-full border border-gray-300 bg-white rounded-md p-2"
+                        className="mt-1 block w-full border border-black bg-white rounded-md p-2"
                         required
                     />
                 </div>
                 <div className="mb-4">
-                    <label htmlFor="password" className="block text-sm font-medium text-gray-700">Password</label>
+                    <label htmlFor="password" className="block text-sm font-bold mb-3 text-gray-700">Password</label>
                     <input
                         type="password"
                         id="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                        className="mt-1 block w-full border border-gray-300 bg-white rounded-md p-2"
+                        className="mt-1 block w-full border border-black bg-white rounded-md p-2"
                         required
                     />
                 </div>
-                <button type="submit" className="w-full bg-[#016A70] text-white text-center p-2 rounded-md hover:bg-[#184c4e]">
+                <button type="submit" className="w-full bg-[#016A70] mt-4 font-bold text-white text-center p-2 rounded-md hover:bg-[#184c4e]">
                     Register
                 </button>
-                <p className="text-sm text-black mt-2 w-full">Already have an account? <span className='text-[#016A70] font-bold underline'><Link href="/login">Sign In</Link></span></p>
+                <p className="text-sm text-black mt-3 w-full">Already have an account? <span className='text-[#016A70] font-bold underline'><Link href="/login">Sign In</Link></span></p>
             </form>
         </div>
     </div>
